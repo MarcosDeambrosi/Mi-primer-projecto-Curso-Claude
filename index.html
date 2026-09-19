@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deambrosi Bárber — Barbería</title>
+  <meta name="description" content="Deambrosi Bárber — Barbería moderna. Cortes de cabello, arreglo de barba y afeitado clásico. Agendá tu cita en segundos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">D</span>
+        <span class="brand-text">Deambrosi <em>Bárber</em></span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#agendar" class="nav-cta">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Barbería · Estilo · Precisión</p>
+      <h1>Tu mejor versión<br />empieza en la silla.</h1>
+      <p class="hero-sub">
+        Cortes clásicos y modernos, arreglo de barba y afeitado tradicional.
+        Reservá tu turno en segundos, sin filas ni esperas.
+      </p>
+      <div class="hero-actions">
+        <a href="#agendar" class="btn btn-primary">Agendar cita</a>
+        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Servicios ===== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Servicios</p>
+        <h2>Lo que hacemos</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Corte de cabello</h3>
+          <p>Corte a máquina y tijera, definido y personalizado a tu estilo.</p>
+          <span class="price">$ desde</span>
+        </article>
+        <article class="service-card">
+          <h3>Arreglo de barba</h3>
+          <p>Perfilado, recorte y contorno con toalla caliente para un acabado impecable.</p>
+          <span class="price">$ desde</span>
+        </article>
+        <article class="service-card">
+          <h3>Corte + Barba</h3>
+          <p>El combo completo. Corte y barba coordinados para un look prolijo.</p>
+          <span class="price">$ desde</span>
+        </article>
+        <article class="service-card">
+          <h3>Afeitado clásico</h3>
+          <p>Afeitado tradicional a navaja, suave y al ras, como se hacía siempre.</p>
+          <span class="price">$ desde</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Nosotros ===== -->
+  <section class="section section-alt" id="nosotros">
+    <div class="container about-inner">
+      <div class="about-text">
+        <p class="eyebrow">Nosotros</p>
+        <h2>Detalle en cada corte</h2>
+        <p>
+          En Deambrosi Bárber creemos que un buen corte es cuestión de tiempo y
+          atención. Trabajamos con cita previa para dedicarle a cada cliente la
+          atención que merece: sin apuros, sin filas, solo un buen resultado.
+        </p>
+        <ul class="about-list">
+          <li>Atención personalizada con turno reservado</li>
+          <li>Ambiente cómodo y profesional</li>
+          <li>Higiene y herramientas de primera</li>
+        </ul>
+      </div>
+      <div class="about-highlight">
+        <div class="highlight-card">
+          <span class="highlight-number">100%</span>
+          <span class="highlight-label">Con cita previa</span>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-number">+5</span>
+          <span class="highlight-label">Años de experiencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Agendar ===== -->
+  <section class="section" id="agendar">
+    <div class="container booking-inner">
+      <div class="section-head">
+        <p class="eyebrow">Agendá tu cita</p>
+        <h2>Reservá tu turno</h2>
+        <p class="section-lead">
+          Completá tus datos y te confirmamos por WhatsApp. Rápido y sin vueltas.
+        </p>
+      </div>
+
+      <form class="booking-form" id="booking-form" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Elegí un servicio</option>
+            <option value="Corte de cabello">Corte de cabello</option>
+            <option value="Arreglo de barba">Arreglo de barba</option>
+            <option value="Corte + Barba">Corte + Barba</option>
+            <option value="Afeitado clásico">Afeitado clásico</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fecha">Día</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="field">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notas">Notas (opcional)</label>
+          <textarea id="notas" name="notas" rows="3" placeholder="Algo que debamos saber"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          Enviar por WhatsApp
+        </button>
+        <p class="form-hint">Se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Horarios / Contacto ===== -->
+  <section class="section section-alt" id="horarios">
+    <div class="container info-grid">
+      <div class="info-block">
+        <h3>Horarios</h3>
+        <ul class="hours">
+          <li><span>Lunes a Viernes</span><span>9:00 – 20:00</span></li>
+          <li><span>Sábados</span><span>9:00 – 18:00</span></li>
+          <li><span>Domingos</span><span>Cerrado</span></li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <h3>Dónde estamos</h3>
+        <p>Dirección de la barbería<br />Ciudad, País</p>
+        <p class="info-contact">
+          <a href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp: +00 000 000 000</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand brand-footer">
+        <span class="brand-mark">D</span>
+        <span class="brand-text">Deambrosi <em>Bárber</em></span>
+      </span>
+      <p class="footer-note">© <span id="year"></span> Deambrosi Bárber. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/000000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.7 1.4 5.7 1.4h.1C24.6 28.8 30 23.4 30 16.8 30 9.4 24.6 3 16 3zm0 23.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.7-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5 9.6 9.9 5 16 5s11 4.9 11 10.8-4.9 10.8-11 10.8zm6-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.8.2s-.9 1.1-1.1 1.3c-.2.2-.4.2-.7 0-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.6s-.8-1.9-1.1-2.6c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.1 2.2.9 3 1 4.1.9.7-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
